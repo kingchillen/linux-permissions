@@ -1,0 +1,20 @@
+# 1. Installeren van software
+Veel Linux-distributies maken gebruik van een packet manager om software te installeren en configureren.
+
+Ubuntu maakt gebruik van de packetmanager apt _(advanced packaging tool)_ om software te installeren, updaten en verwijderen.
+
+Commando | Uitleg
+--- | ---
+sudo apt update | _Met dit commando update je de Packetmanager (apt). Nu weet apt wat de laatste nieuwe software versies zijn. De repository is geupdate, zeggen we dan._
+sudo apt install net-tools | hiermee installeer je de net-tools directory.
+ifconfig | door middel van dit commando worden de netwergegevens weergeven.
+netstat -na | weergeeft de active internet connections en UNIX domain sockets.
+sudo apt reinstall net-tools | dit commando herinstalleerd de net--tools directory.
+sudo apt purge net-tools | verwijdert de huidige net-tools directory.
+sudo apt upgrade | voert updates uit en installeerd plaatsvervangende directories (dit duurt nogal lang).
+sudo apt clean | Deze opdracht verwijdert alle lokale kopieën van geïnstalleerde pakketten die zijn gedownload tijdens het proces van pakketbeheer. Het kan worden gebruikt om schijfruimte vrij te maken door onnodige bestanden te verwijderen, maar het heeft geen invloed op de geïnstalleerde pakketten zelf.
+sudo apt autoremove net-tools | verwijderd automatisch de net-tools directory.
+sudo apt-cache show ^net-tools$ | weergeeft informatie of de huidige "apt install" versie van de NET-3 networking toolkit ofwel de net-tools.
+sudo dpkg -i steam_latest.deb | Deze opdracht installeert het Steam-pakket met de naam "steam_latest.deb" met behulp van het dpkg-beheerprogramma. Het -i-vlag geeft aan dat het pakket moet worden geïnstalleerd. Zorg ervoor dat het pad naar het bestand correct is en dat eventuele afhankelijkheden zijn voldaan voor een succesvolle installatie.
+sudo dpkg -l "net*" | weergeeft de directories met de referentie "net" en de versies ervan.
+sudo dpkg -s screen | Deze opdracht toont de status van het pakket met de naam "screen" met behulp van het dpkg-beheerprogramma. Het geeft informatie weer over de installatiestatus, versienummer, beschrijving en andere details met betrekking tot het pakket "screen".
